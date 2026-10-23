@@ -1,0 +1,17 @@
+[package]
+name = "{{ .AppName }}"
+version = "0.1.0"
+edition = "2021"
+authors = ["Compustretch Engineering <dev@compustretch.com>"]
+description = "Microservice generated via Compustretch Devo IDP"
+
+[dependencies]
+tokio = { version = "1.38", features = ["full"] }
+axum = "0.7"
+clickhouse = { version = "0.12", features = ["serde", "time"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+dotenvy = "0.15"
+uuid = { version = "1.8", features = ["v4", "serde"] }
+tracing = "0.1"
+tracing-subscriber = "0.3"
